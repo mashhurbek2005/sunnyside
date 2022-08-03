@@ -390,6 +390,8 @@ a {
 }
 
 .features__link {
+  position: relative;
+  z-index: 3;
   display: inline-block;
   font-family: var(--main-font-family);
   font-weight: 900;
@@ -398,6 +400,23 @@ a {
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #24303E;
+}
+
+.features__link::after{
+  position: absolute;
+  top: 17px;
+  left: -10px;
+
+  z-index: 1;
+  display: block;
+  width: 137px;
+  height: 10px;
+  content: "";
+  background-image: url("../images/link-after.svg");
+}
+
+.features__link::after:hover{
+  opacity: 0.7;
 }
 
 .features__bottle-box {
