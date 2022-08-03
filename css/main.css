@@ -423,6 +423,10 @@ a {
   background-image: url("../images/second-link.svg");
 }
 
+.second-link:hover::after{
+  background-image: url("../images/hover2.svg");
+}
+
 .features__bottle-box {
   max-width: 576px;
   height: 312px;
