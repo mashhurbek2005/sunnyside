@@ -414,10 +414,10 @@ a {
 
 .features__link::after {
   position: absolute;
-  top: 17px;
+  top: 14px;
   left: -10px;
 
-  z-index: 1;
+  z-index: -2;
   display: block;
   width: 137px;
   height: 10px;
@@ -502,7 +502,7 @@ a {
 
 @media only screen and (min-width: 1400px) {
   .features__info {
-    padding: 157px 110px 157px 145px;
+    padding: 150px 110px 130px 145px;
   }
 
   .features__info--glass {
@@ -726,6 +726,14 @@ a {
 
   .client__item {
     margin: 0;
+  }
+
+  .client__item:not(:last-child){
+    margin-bottom: 0;
+  }
+
+  .client__quote{
+    margin-bottom: 69px;
   }
 }
 
