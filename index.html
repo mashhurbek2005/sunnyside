@@ -1,24 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Template Project</title>
-  <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
-  <!-- <link rel="stylesheet" href="./css/main.css"> -->
-  <link rel="stylesheet" href="./css/main.min.css">
+  <title>SunnySide</title>
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <!-- <link rel="stylesheet" href="./css/main.min.css"> -->
 </head>
+
 <body>
 
 
 
   <!-- SITE HEADER START -->
-
   <header class="site-header">
+    <div class="container">
+      <div class="site-header__inner">
+        <a class="logo" href="./index.html">
+          <img class="logo__img" src="images/site-logo.svg" 
+            width="170" height="33"
+            alt="sunnyside site's logo">
+        </a>
 
+
+        <div class="site-header__info">
+          <button class="site-header__menu-btn js-menu-btn"></button>
+
+          <nav class="site-nav">
+            <span class="site-nav__triangle"></span>
+            <ul class="site-nav__list">
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="#">About</a>
+              </li>
+  
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="#"> Services</a>
+              </li>
+  
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="#">Projects</a>
+              </li>
+            </ul>
+            <a class="site-header__link site-header__link--mobile" href="#">CONTACT</a>
+          </nav>
+          <a class="site-header__link site-header__link--tablet" href="#">CONTACT</a>
+        </div>
+        
+      </div>
+    </div>
   </header>
-
   <!-- SITE HEADER END -->
 
 
@@ -26,7 +59,80 @@
   <main class="site-main">
 
     <section class="hero">
-      
+      <div class="hero__top">
+        <div class="hero__title-box">
+          <h1 class="hero__title">
+            We are creatives
+          </h1>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <h2 class="visually-hidden">OUR FEATURES</h2>
+      <div class="features__inner">
+        <div class="features__egg">
+          <div class="features__egg-box"></div>
+
+          <div class="features__info">
+            <h3 class="features__title">
+              Transform your brand
+            </h3>
+
+            <p class="features__text">
+              We are a full-service creative agency specializing in helping brands grow fast. Engage your clients
+              through compelling visuals that do most of the marketing for you.
+            </p>
+
+            <a class="features__link" href="#">LEARN MORE</a>
+          </div>
+        </div>
+
+        <div class="features__bottle">
+          <div class="features__bottle-box"></div>
+
+          <div class="features__info features__info--glass">
+            <h3 class="features__title">
+              Stand out to the right audience
+            </h3>
+
+            <p class="features__text">
+              Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters,
+              we’ll build and extend your brand in digital places.
+            </p>
+
+            <a class="features__link" href="#">LEARN MORE</a>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+    <section class="services">
+      <div class="services__inner">
+        <div class="services__info">
+          <h3 class="services__title">
+            Graphic Design
+          </h3>
+
+          <p class="services__text">
+            Great design makes you memorable. We deliver artwork that underscores your brand message and captures
+            potential clients’ attention.
+          </p>
+        </div>
+
+        <div class="services__info services__info--photography">
+          <h3 class="services__title">
+            Photography
+          </h3>
+
+          <p class="services__text">
+            Increase your credibility by getting the most stunning, high-quality photos that improve your business
+            image.
+          </p>
+        </div>
+      </div>
     </section>
 
   </main>
@@ -39,5 +145,8 @@
   </footer>
   <!-- SITE FOOTER END -->
 
+  <script src="js/main.js"></script>
+
 </body>
+
 </html>
