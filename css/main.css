@@ -415,7 +415,7 @@ a {
   background-image: url("../images/link-after.svg");
 }
 
-.features__link:hover{
+.features__link:hover::after{
   background-image: url("../images/hover.svg");
 }
 
